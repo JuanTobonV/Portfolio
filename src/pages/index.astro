@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
+import MailIcon from "../components/icons/MailIcon.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+---
+
+<Layout
+  title="JuanTobonV | Portfolio web"
+  description="Contrata a Juan Tobón como Backend Developer y DevOps Engineer. Especializado en Java, Python y Go."
+>
+  <main>
+    <SectionContainer>
+      <h1
+        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+      >
+        Hey, I'm Juan José
+      </h1>
+
+      <h2 class="text-2xl text-wrap">
+        <span>+ 1.5 años de experiencia. </span>
+        <span class="text-yellow-200/90">
+          Backend Developer y DevOps Engineer</span
+        >. <span class="text-red-100/90">Soy de Medellín, Colombia </span>, <span
+          class="opacity-80"
+          >me especializo en Java, Python y Go.
+        </span>
+      </h2>
+
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/juantobonv/">
+          <LinkedinIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+
+        <SocialPill href="https://github.com/JuanTobonV">
+          <GithubIcon class="size-6" />
+          Github
+        </SocialPill>
+
+        <SocialPill href="https://github.com/JuanTobonV">
+          <MailIcon class="size-6" />
+          Contact me
+        </SocialPill>
+      </nav>
+	</SectionContainer>
+	
+	<SectionContainer>
+		<Experience />
+
+	</SectionContainer>
+  </main>
+</Layout>
