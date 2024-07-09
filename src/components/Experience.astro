@@ -1,23 +1,39 @@
-
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+
+const EXPERIENCE =[
+  {
+    date: "Currently...",
+    title: "Student of Systems Engineering and Informatics",
+    company: "Universidad Nacional de Colombia",
+    description: "I'm studying Systems Engineering and Informatics at the Universidad Nacional de Colombia. I'm currently in the 6th semester of the program."
+  },
+
+  {
+    date: "Currently...",
+    title: "Software Development Technician",
+    company: "Cesde",
+    description: "I'm studying to become a software development technician at the CESDE institute."
+  },
+
   {
     date: "Currently...",
     title: "Software Developer",
     company: "Sura",
-    description:
-      "I'm working with Sura as a software developer, developing and maintaining the company's core systems.",
-  },
+    description: "I work as a full-stack software developer at one of the biggest companies in Colombia: Sura. I'm in charge of the backend and frontend of the projects we develop.",
+    
+  }
 ]
 ---
+<ol class="relative border-s border-gray-200 ml-2 dark:border-gray-700"> 
+        {
+          EXPERIENCE.map(experience => (
+            <li class = "mb-10 ms-4">
+              <ExperienceItem {...experience} />
 
-<ol class="relative mt-16">
-  {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
-      </li>
-    ))
-  }
+            </li>
+          ) )
+        }           
+
 </ol>
+

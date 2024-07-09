@@ -8,21 +8,22 @@ import GithubIcon from "../components/icons/GithubIcon.astro";
 import MailIcon from "../components/icons/MailIcon.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
 ---
 
 <Layout
   title="JuanTobonV | Portfolio web"
-  description="Contrata a Juan Tobón como Backend Developer y DevOps Engineer. Especializado en Java, Python y Go."
+  description="Contrata a Juan Tobón como Backend Developer. Especializado en Java y Python"
 >
-  <main>
-    <SectionContainer>
+  <main class="px-4">
+    <SectionContainer class = "py-44 pb-24">
       <h1
-        class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10"
+        class="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, I'm Juan José
       </h1>
 
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
 		I'm a <span class="text-yellow-200/90"> full-stack software developer </span>studying System's Engineering and Informatics at Universidad Nacional de Colombia.
       </h2>
 
@@ -32,25 +33,36 @@ import SectionContainer from "../components/SectionContainer.astro";
 		I'm from Medellin, Colombia and I specialize myself at  <span class="text-yellow-200/90">Java and Python </span> programming languages.
 	  </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/juantobonv/">
-          <LinkedinIcon class="size-6" />
+          <LinkedinIcon class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
 
         <SocialPill href="https://github.com/JuanTobonV">
-          <GithubIcon class="size-6" />
+          <GithubIcon class="size-4 md:size-8" />
           Github
         </SocialPill>
 
         <SocialPill href="mailto:jujotovil@gmail.com">
-          <MailIcon class="size-6" />
+          <MailIcon class="size-4 md:size-6" />
           Contact me
         </SocialPill>
       </nav>
 	</SectionContainer>
 	
-	<SectionContainer>
+	<SectionContainer id = "experience">
+    <h2 class="text-2xl fontt-semibold mb-6 flex gap-x-3 items-center">
+      <Briefcase class = "size-7" />
+       Work experience and studies</h2>
+		<Experience />
+
+	</SectionContainer>
+
+  <SectionContainer id = "projects">
+    <h2 class="text-2xl fontt-semibold mb-6 flex gap-x-3 items-center">
+      <Briefcase class = "size-7" />
+      Projects</h2>
 		<Experience />
 
 	</SectionContainer>
