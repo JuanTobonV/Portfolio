@@ -9,6 +9,8 @@ import MailIcon from "../components/icons/MailIcon.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -16,7 +18,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
   description="Contrata a Juan Tobón como Backend Developer. Especializado en Java y Python"
 >
   <main class="px-4">
-    <SectionContainer class = "py-44 pb-24">
+    <SectionContainer class = "py-44 pb-32">
       <h1
         class="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row gap-x-4 pb-6 lg:pb-10"
       >
@@ -59,12 +61,16 @@ import Briefcase from "../components/icons/Briefcase.astro";
 
 	</SectionContainer>
 
-  <SectionContainer id = "projects">
-    <h2 class="text-2xl fontt-semibold mb-6 flex gap-x-3 items-center">
-      <Briefcase class = "size-7" />
-      Projects</h2>
-		<Experience />
+  <SectionContainer id="proyectos">
+    <h2
+      class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+    >
+      <CodeIcon class="size-7" />
+      Projects
+    </h2>
+    <Projects />
+  </SectionContainer>
 
-	</SectionContainer>
+  
   </main>
 </Layout>
