@@ -5,6 +5,7 @@
       color: white;
       font-family: "Onest", sans-serif;
       box-sizing: border-box;
+      scroll-behavior: smooth;
       
 }
 
@@ -15,6 +16,7 @@ nav{
       align-items: center;
       font-size: 1.3rem;
       position: relative;
+      
 }
 
 .nav__title{
@@ -129,7 +131,7 @@ span{
             font-weight: 800;
       }
 
-      .main_text p{
+      .main_text p, .about__content p{
             font-size: 1.1rem;
             font-weight: 500;
       }
@@ -149,21 +151,107 @@ span{
             cursor: pointer;
       }
 
-      .workExperience{
+      .workExperience, .projects__titles h1{
             display: flex;
+            margin-top: 30px;
             flex-direction: column;
       }
 
-      .workExperience__title{
+      .workExperience__title, .projects__titles, .about__title{
             display: flex;
             gap: 5px;
       }
 
-      .workExperience__title h1{
+      .workExperience__title h1, .projects__titles h1{
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+      }
+
+      .projects__titles{
+            align-items: center;
+      }
+
+      .projects__card{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+      }
+
+      .cards {
+            background-color: #b6b6b636;
+            border-radius: 10px;
+      }
+
+      .cards h3{
+            font-weight: 600;
+            font-size: 1.1rem;
+      }
+
+      .projects__card img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+      }
+
+      .card__text{
+            padding: 10px;
+      }
+
+      .aboutMe{
+            margin: 30px 0px;
+      }
+
+      .about__title img{
+            width: 22px;
+            height: 22px;
+      }
+
+      .about__title h1{
             font-size: 1.1rem;
             font-weight: 600;
       }
 
+      .about__title{
+            margin-bottom: 20px;
+      }
+
+      .contactMe__card{
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            border-radius: 10px;
+      }
+
+      .contactMe__text h1, .contactMe__text p{
+            color: black;
+      }
+
+      .contactMe__text h1{
+            font-size: 1.1rem;
+            font-weight: 700;
+      }
+
+      .contactMe__card button{
+            background-color: black;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 20px 50px 10px;
+            
+      }
+
+      .resume{
+            display: flex;
+            flex-direction: row;
+            
+      }
+
+      .card_img--suratech{
+            height: 270.81px;
+      }
+
+      
 }
 
 
