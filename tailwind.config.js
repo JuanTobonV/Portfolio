@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'jet': ['JetBrains Mono', 'serif'],
       }
+
     },
   },
   plugins: [],
