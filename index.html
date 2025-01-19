@@ -16,21 +16,32 @@
           <p class="text-white text-xl font-jet">JuanTobonV</p>
         </div>
         <div>
-          <svg
-            class="text-white w-8 h-8 cursor-pointer"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="{1.5}"
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          <div class="flex flex-col items-end">
+            <svg 
+              id="menu"
+              class="text-white w-8 h-8 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+
+            <div id="menuInfo" class="hidden">
+              <ul>
+                <a href=""><li class="text-right">Projects</li></a>
+                <a href=""><li class="text-right">About me</li></a>
+                <a href=""><li class="text-right">Contact me</li></a>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -395,5 +406,7 @@
       </section>
     </main>
     <footer></footer>
+
+    <script src="./src/app/menuWrapper.js"></script>
   </body>
 </html>
